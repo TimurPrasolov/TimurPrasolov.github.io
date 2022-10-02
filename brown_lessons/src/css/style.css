@@ -1,0 +1,22 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+
+}
+
+.test_one>p{
+	color: red;
+}
+.test_two p{
+	color: green;
+}
+ul{
+	color: blue;
+}
+#test4{
+	color: yellow;
+}
+[helo="4"]{
+	color: red;
+}
