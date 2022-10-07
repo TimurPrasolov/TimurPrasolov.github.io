@@ -1,5 +1,20 @@
 body{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+h1.table_content{
+	font-size: 34px;
+	color: #263244;
+	margin: 70px auto 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+hr.table_content{
+	height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 60px;
 }
 
 nav{
@@ -8,13 +23,13 @@ nav{
 	width: 100%;
 	height: 61px;
 	background: #344051;
+	color: #fff;
 }
 .logo{
 	float: left;
 	font-size: 23px;
 	line-height: 60px;
 	padding-left: 200px;
-	color: #fff;
 }
 .menu{
 	float: left;
@@ -24,25 +39,28 @@ nav{
 .menu li{
     float: left;
     font-size: 16px;
-    color: rgb(172, 45, 45);
     line-height: 60px;
     margin-right: 40px;
     text-transform: uppercase;
+	letter-spacing: -1px;
+}
+.menu li a:visited{
+    color: white;
 }
 
 .main{
     width: 100%;
     height: calc(100% - 60px);
 	background: url(../image/boy.png) 85% 100%/auto 80% no-repeat, url(../image/bg.jpg) center/cover no-repeat;
+	box-shadow: 0px -36px 31px -26px #000000 inset;
 }
 .title_container{
     float: left;
-    margin: 290px 0px 0px 340px;
+    margin: 290px 0px 0px 300px;
     color: #2C384A;
     text-align: center;
 }
 .title_container h1{
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
 	font-size: 42px;
 }
 .title_container p{
@@ -51,14 +69,126 @@ nav{
 	color: #79818D;
 }
 .title_container input{
-	width: 96px;
-    height: 40px;
-    text-align: center;
-    border: 2px solid #6d7682;
-    background: none;
-    border-radius: 5px;
-    color: #6d7682;
-    font-size: 13px;
-    cursor: pointer;
-	margin-right: 19px;
+	width: 95px;
+	height: 42px;
+	background: none;
+	border: 2px solid #6D7682;
+	border-radius: 0.6em;
+	margin: 0px 13px 0px 13px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	color: #6D7682;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+.about_container{
+	width: auto;
+	padding-top: 47px;
+	text-align: center;
+}
+.about_container p{
+	margin: 28px auto;
+	width: 700px;
+	color: #3F495A;
+}
+#about_text1{
+	margin-bottom: 28px;
+}
+.about_container input{
+	width: 157px;
+	height: 35px;
+	border: 2px solid #6D7682;
+	border-radius: 0.6em;
+	background: url(../image/input.png) 8px/auto no-repeat;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+	color: #3F495A;	
+}
+
+.skills{
+	background: url(../image/bg2.jpg);
+}
+.skills_container{
+	width: auto;
+	height: 550px;
+	border: 2px solid red;
+	margin-top: 64px;
+	text-align: center;
+}
+.skills_item{
+	width: 216px;
+	display: inline-block;
+	margin: 54px 0px 0px 50px;
+}
+.skills_item h3{
+	font-size: 25px;
+	color: #d17700;
+	margin: 21px 0px 14px 0px;
+}
+
+
+.case{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#case_photo{
+	width: 1196px;
+    margin: 40px 0px 40px 80px;
+}
+.case_container{
+	width: auto;
+	margin: 0 auto;
+}
+.case_container p{
+	text-align: center;
+	font-family: 'Calibri';
+	color: #3F495A;
+	font-size: 17px;
+}
+.case_container h2{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 25px;
+	color: #384354;
+}
+.case_container h4{
+	font-family: 16px;
+	font-family: 'Calibri';
+	color: #3F495A;
+	margin: 5px 0px 5px;
+}
+.description_left{
+	width: 200px;
+	float: left;
+	margin-left: 90px;
+	border: #000000 2px solid;
+}
+.description_left a:visited,a:active{
+	font-size: 19px;
+	color: #3F495A;
+	text-align: center;
+	display: flex;
+}
+.description_left input,input:active{
+	margin-top: 8px;
+	width: 201px;
+	height: 45px;
+	border-radius: 5px;
+	background-color: #63B5AE;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #fff;
+	font-size: 19px;
+}
+.description_left input:active{
+	width: 204px;
+	height: 47px;
+	background-color: #6D7682;
+}
+.description_right{
+	display: inline-block;
+	border: #000000 2px solid;
+	width: 860px;
+	height: 90px;
+	margin: 0px 0px 30px 400px;
 }
