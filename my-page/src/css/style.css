@@ -1,11 +1,22 @@
-body{
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+main{
+	position: absolute;
+	margin: -16.1px;
 }
-
+main p{
+    text-align: center;
+	font-family: 'Calibri';
+	color: #3F495A;
+	font-size: 17px;
+    margin-bottom: 30px;
+}
+section{
+	width: 100vw;
+    height: 100vh;
+}
 h1.table_content{
 	font-size: 34px;
-	color: #263244;
-	margin: 70px auto 30px;
+	color: #323E4F;
+	margin: 25px auto 30px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -16,12 +27,14 @@ hr.table_content{
     width: 80px;
     margin: 0 auto 60px;
 }
-
+/* Навигационное меню */
 nav{
-	position: absolute;
+    display: flex;
+    justify-content: space-between;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	width: 100%;
-	height: 61px;
+	height: 69px;
+	padding: 10px;
 	background: #344051;
 	color: #fff;
 }
@@ -47,10 +60,10 @@ nav{
 .menu li a:visited{
     color: white;
 }
-
-.main{
+/* Нулевой слайд */
+.who_i{
     width: 100%;
-    height: calc(100% - 60px);
+    height: calc(100% - 10px);
 	background: url(../image/boy.png) 85% 100%/auto 80% no-repeat, url(../image/bg.jpg) center/cover no-repeat;
 	box-shadow: 0px -36px 31px -26px #000000 inset;
 }
@@ -62,9 +75,10 @@ nav{
 }
 .title_container h1{
 	font-size: 42px;
+	font-weight: bold;
 }
 .title_container p{
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-family:Verdana, Tahoma, sans-serif;
 	margin: 15px 0px 30px 0px;
 	color: #79818D;
 }
@@ -82,12 +96,10 @@ nav{
 	cursor: pointer;
 	text-align: center;
 }
-
-
+/* Обо мне */
 .about_container{
-	width: auto;
-	padding-top: 47px;
 	text-align: center;
+	padding-top: 100px;
 }
 .about_container p{
 	margin: 28px auto;
@@ -106,15 +118,15 @@ nav{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
 	color: #3F495A;	
 }
-
+/* Что я умею */
 .skills{
-	background: url(../image/bg2.jpg);
+	background: url(../image/bg2.jpg) center no-repeat;
 }
 .skills_container{
 	width: auto;
 	height: 550px;
-	border: 2px solid red;
-	margin-top: 64px;
+	margin-top: 100px;
+	padding-top: 50px;
 	text-align: center;
 }
 .skills_item{
@@ -127,30 +139,25 @@ nav{
 	color: #d17700;
 	margin: 21px 0px 14px 0px;
 }
-
-
-.case{
-	padding-top: 30px;
-	padding-bottom: 30px;
+/* Кейсы */
+.case_container{
+    width: max-content;
+	height: 950px;
+    margin: 0 auto;
 }
 #case_photo{
-	width: 1196px;
-    margin: 40px 0px 40px 80px;
+    display: block;
+    text-align: center;
+	width: 1000px;
+    height: 480px;
+    margin: 0 auto;
+	padding: 20px 0px 20px 0px;
 }
-.case_container{
-	width: auto;
-	margin: 0 auto;
-}
-.case_container p{
-	text-align: center;
-	font-family: 'Calibri';
-	color: #3F495A;
-	font-size: 17px;
-}
-.case_container h2{
+.case_container h3{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 25px;
 	color: #384354;
+	text-align: left;
 }
 .case_container h4{
 	font-family: 16px;
@@ -158,11 +165,25 @@ nav{
 	color: #3F495A;
 	margin: 5px 0px 5px;
 }
+.description{
+	display: flex;
+	position: inherit;
+	width: 1000px;
+	margin: auto;
+}
 .description_left{
-	width: 200px;
+	float: left;
+}
+.description_left h2{
+	font-size: 25px;
+	color: #384354;
+}
+.description_right{
 	float: left;
 	margin-left: 90px;
-	border: #000000 2px solid;
+}
+.description_right p {
+	text-align: left;
 }
 .description_left a:visited,a:active{
 	font-size: 19px;
@@ -185,10 +206,202 @@ nav{
 	height: 47px;
 	background-color: #6D7682;
 }
-.description_right{
+/* Расчет стоимости */
+.price{
+	position: inherit;
+    width: max-content;
+	height: 94vh;
+    margin: 0 auto;
+}
+.price select{
+    width: 961px;
+    height: 57px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium';
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+.price h1{
+	text-align: center;
+	color: #1C2534;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 46px;
+    margin-bottom: 40px;
+}
+.price h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-style: normal;
+    color:#1C2534;
+}
+.price h3{
+    margin-top: 20px;
+    font-size: 21px;
+    color: #1C2534
+}
+.line{
+    display: block;
+    border-bottom: 3px solid #EEEEEE;
+    width: 961px;
+    margin: 30px 0px 30px 0px;
+}
+/* rewiew it */
+.price_content{
+	display: flex;
+	justify-content: space-between;
+}
+/* Немного статистики */
+.static{
+	position: relative;
+	margin: 70px 0px 70px 0px;
+	padding: 77px;
+	width: auto;
+	height: 80vh;
+	background: url(../image/bg3.jpg) 30% no-repeat;
+	text-align: center;
+}
+.static_item{
 	display: inline-block;
-	border: #000000 2px solid;
-	width: 860px;
+	padding: 17px 57px;
+}
+.static_item h2{
+	font-size: 37.5px;
+	font-family: 'Impact';
+	font-style: normal;
+	padding: 18px;
+	color: #323E4F;
+}
+.static_item h4{
+	font-size: 17px;
+	color: #323E4F;
+}
+/* Отзывы */
+article{
+	width: 100%;
+	height: 70vh;
+	margin-bottom: 22px;
+	text-align: center;
+}
+.reviews_container{
+	width: 790px;
+	height: 100%;
+	margin: 0 auto;
+}
+.reviews_container img{
+	padding-bottom: 57px;
+}
+.radio-block{
+	text-align:center;
+}
+.radio-content{
+	display:inline-block;
+	padding: 10px;
+}
+input[type="radio"] {
+	display:none;
+}
+input[type="radio"] + label {
+	color:black;
+	cursor:pointer;
+	font-size: 20px;
+}
+input[type="radio"] + label span {
+	display:inline-block;
+	width:27px;
+	height:27px;
+	margin:-2px 5px 0 0;
+	vertical-align:middle;
+	border:1px solid #cecece;
+	border-radius: 50%;
+	cursor:pointer;
+	transition: background .2s,
+	transform .2s;
+}
+input[type="radio"] + label span:hover,
+input[type="radio"] + label:hover span{
+transform: scale(1.2);
+} 
+input[type="radio"]:checked + label span {
+	background:  #a78b12; 
+	background: -webkit-linear-gradient(to right, #93F9B9, #a78b12); 
+	background: linear-gradient(to right, #93F9B9, #a78b12); 
+	box-shadow: 0px 0px 0px 5px white inset;
+}
+input[type="radio"]:checked + label{
+color: #cac037; 
+}
+/* Мои контакты */
+footer{
+	position: absolute;
+	width: 100%;
+	height: max-content;
+	text-align: center;
+}
+.contact_container{
+	background: url(../image/bg4.jpg) center/cover no-repeat !important;
+}
+.contact_container > h1{
+	padding-top: 100px;
+	color: #EEEEEE;
+
+}
+.contact_container p,h2,h4{
+	color: white;
+}
+.footer_items {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+.footer_items img{
+	padding-bottom: 11px;
+}
+#footer_link:visited{
+	color: #EEEEEE;
+}
+.filling_form h2{
+	font-size: 22px;
+	padding: 14px;
+}
+.filling_form input[type=text]{
+	width: 350px;
+	height: 35px;
+	padding: 10px;
+	margin: 0px 12px 15px 12px;
+	background: rgba(238, 238, 238, 0.85);
+}
+.filling_form textarea[name="message"]{
+	width: 728px;
+	height: 94px;
+	padding: 10px;
+	background: rgba(238, 238, 238, 0.85);
+}
+.filling_form input[type=submit],input[type=submit]:active{
+	width: 125px;
+	height: 46px;
+	border-radius: 3px;
+	border: 2px solid white;
+	background-color: transparent;
+	color: #EEEEEE;
+	font-size: 21px;
+	margin-bottom: 30px;
+}
+.social{
+	display: flex;
+	width: 700px;
+	margin: 50px auto;
+	justify-content: space-around;
+}
+#map{
+	width: 100%;
+	height: auto;
+}
+#bottom_entry{
+	width: auto;
 	height: 90px;
-	margin: 0px 0px 30px 400px;
+	padding-top: 50px;
+	background-color: #344051;
+	margin-top: -30px;
 }
