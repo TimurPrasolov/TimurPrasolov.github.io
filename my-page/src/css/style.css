@@ -1,6 +1,6 @@
+
 main{
 	position: absolute;
-	margin: -16.1px;
 }
 main p{
     text-align: center;
@@ -9,7 +9,7 @@ main p{
 	font-size: 17px;
     margin-bottom: 30px;
 }
-section{
+main > section{
 	width: 100vw;
     height: 100vh;
 }
@@ -40,6 +40,7 @@ nav{
 }
 .logo{
 	float: left;
+	font-family: 'Inter', sans-serif;
 	font-size: 23px;
 	line-height: 60px;
 	padding-left: 200px;
@@ -96,6 +97,20 @@ nav{
 	cursor: pointer;
 	text-align: center;
 }
+.title_container input:active,input:visited{
+	width: 105px;
+	height: 52px;
+	background: none;
+	border: 2px solid #6D7682;
+	border-radius: 0.6em;
+	margin: 0px 13px 0px 13px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	color: #3f6aa3;
+	cursor: pointer;
+	text-align: center;
+}
 /* Обо мне */
 .about_container{
 	text-align: center;
@@ -117,6 +132,15 @@ nav{
 	background: url(../image/input.png) 8px/auto no-repeat;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
 	color: #3F495A;	
+}
+.about_container input:active, input:visited{
+	width: 197px;
+	height: 45px;
+	border: 2px solid #6D7682;
+	border-radius: 0.6em;
+	background: url(../image/input.png) 10px/auto no-repeat;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+	color: #3F495A;
 }
 /* Что я умею */
 .skills{
@@ -208,9 +232,7 @@ nav{
 }
 /* Расчет стоимости */
 .price{
-	position: inherit;
     width: max-content;
-	height: 94vh;
     margin: 0 auto;
 }
 .price select{
@@ -246,7 +268,6 @@ nav{
     width: 961px;
     margin: 30px 0px 30px 0px;
 }
-/* rewiew it */
 .price_content{
 	display: flex;
 	justify-content: space-between;
